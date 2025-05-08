@@ -116,3 +116,7 @@ tests/e2e/toy_examples/deepspeed/synchronous/output.txt
 
 
 log/
+
+# data
+data/function_call/raw_data/
+data/function_call/processed_data/

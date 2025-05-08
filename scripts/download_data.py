@@ -13,7 +13,7 @@ def download_datasets(repo_id="ZihanWang314/ragen-datasets", local_dir="data"):
     """
     print(f"Downloading datasets from {repo_id}...")
 
-    url = "https://huggingface.co/datasets/Jiayi-Pan/Countdown-Tasks-3to4/resolve/main/data/train-00000-of-00001.parquet"
+    url = "https://hf-mirror.com/datasets/Jiayi-Pan/Countdown-Tasks-3to4/resolve/main/data/train-00000-of-00001.parquet"
     os.makedirs("data/countdown", exist_ok=True)
     os.system(f"wget {url} -O data/countdown/train.parquet")
     

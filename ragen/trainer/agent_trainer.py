@@ -381,7 +381,7 @@ class RayAgentTrainer(VerlRayPPOTrainer):
                     metrics.update({"train/" + key: value for key, value in batch.meta_info['metrics'].items()})
 
                     inputs, outputs, scores = _process_batch_for_logging(batch)
-                    # self._maybe_log_generations(inputs=inputs, outputs=outputs, scores=scores, _type='train')
+                    self._maybe_log_generations(inputs=inputs, outputs=outputs, scores=scores, _type='train')
 
 
 
